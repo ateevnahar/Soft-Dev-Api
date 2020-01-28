@@ -2,7 +2,9 @@
 #pragma once
 #include "object.h"
 #include <stdlib.h>
+#include <stdio.h>
 #include <string.h>
+#include <iostream>
 
 // inherits from the object class
 class String: public Object {
