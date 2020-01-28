@@ -8,21 +8,20 @@ class Object {
 		public:
 		size_t hash_;
 
+		// constructor
 		Object() { 
-				hash_ = 0;
 		}
 		
 		// deconstructor
 		virtual ~Object() {
-
 		}
 
 		// the virtual means it is overiddable 
 		virtual bool equals (Object* other) {
-				return this == other; 
 		}
 
-		size_t hash() {
+		// returns a hash value
+		virtual size_t hash() {
 				if (hash_ == 0) {
 						hash_ = hash_me();
 				}
@@ -30,7 +29,12 @@ class Object {
 				return hash_;
 		}
 
+		// returns a hash
 		virtual size_t hash_me () {
 				return reinterpret_cast<size_t> (this);
+		}
+
+		// prints this object
+		virtual void print() {
 		}
 };
