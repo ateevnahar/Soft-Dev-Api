@@ -1,5 +1,7 @@
 // Interface for Array in CwC
 // lang::CwC
+#include <stdlib.h>
+#include "object.h"
 
 class Array {
 	public:
