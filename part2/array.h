@@ -37,7 +37,7 @@ public:
 
 	// returns len_ value
 	size_t len()
-	{ß
+	{
 	}
 
 	// returns pointer to object at given index

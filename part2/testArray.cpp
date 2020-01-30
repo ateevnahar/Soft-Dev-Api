@@ -1,7 +1,6 @@
 #include "object.h"  // Your file with the CwC declaration of Object
 #include "string.h"  // Your file with the String class
 #include "array.h"   // array file
-#include "helper.h" // Your file with helper code
 
 void FAIL() {   exit(1);    }
 void OK(const char* m) { /** print m */ }

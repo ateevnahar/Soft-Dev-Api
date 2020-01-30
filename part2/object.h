@@ -3,32 +3,39 @@
 #include <stdlib.h>
 #include <iostream>
 
-class Object {
+class Object
+{
 
-		public:
-		size_t hash_;
+public:
+	size_t hash_;
 
-		// constructor
-		Object() { 
-		}
-		
-		// deconstructor
-		virtual ~Object() {
-		}
+	// constructor
+	Object()
+	{
+	}
 
-		// the virtual means it is overiddable 
-		virtual bool equals (Object* other) {
-		}
+	// deconstructor
+	virtual ~Object()
+	{
+	}
 
-		// returns a hash value
-		virtual size_t hash() {
-		}
+	// the virtual means it is overiddable
+	virtual bool equals(Object *other)
+	{
+	}
 
-		// returns a hash
-		virtual size_t hash_me () {
-		}
+	// returns a hash value
+	virtual size_t hash()
+	{
+	}
 
-		// prints this object
-		virtual void print() {
-		}
+	// returns a hash
+	virtual size_t hash_me()
+	{
+	}
+
+	// prints this object
+	virtual void print()
+	{
+	}
 };

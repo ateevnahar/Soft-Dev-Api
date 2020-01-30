@@ -7,37 +7,44 @@
 #include <iostream>
 
 // inherits from the object class
-class String: public Object {
-		public:
-    char* val_;
-    size_t size_;
+class String : public Object
+{
+public:
+	char *val_;
+	size_t size_;
 
-  // constructor
-  String(char* val) {
-  }
+	// constructor
+	String(char *val)
+	{
+	}
 
 	// constructor for const
-  String(const char* val) {
-  }
+	String(const char *val)
+	{
+	}
 
-	// destructor 
-  ~String() {
-  }
+	// destructor
+	~String()
+	{
+	}
 
 	// hashing func (memoized)
-  size_t hash_me() {
-  }
-  
+	size_t hash_me()
+	{
+	}
+
 	// used to compare strings
-	bool equals(Object *o) {
-  }
+	bool equals(Object *o)
+	{
+	}
 
 	// optional, use to print a string
-	void print() {
-	
+	void print()
+	{
 	}
 	// optional unneeded for this assignment
 	// but used to concat
-	String* concat(String* c) {
+	String *concat(String *c)
+	{
 	}
 };
