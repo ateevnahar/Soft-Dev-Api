@@ -58,7 +58,7 @@ public:
 	}
 
 	// append given object to the array if there is space
-	void append(Object to_add)
+	void append(*void to_add)
 	{
 	}
 
