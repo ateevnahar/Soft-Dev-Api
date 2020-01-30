@@ -6,6 +6,7 @@
 class Array : public Object
 {
 public:
+
 	// constructor
 	Array(size_t size)
 	{
@@ -26,11 +27,6 @@ public:
 	{
 	}
 
-	// inserts given object at given index
-	void insert(*void to_add, size_t index)
-	{
-	}
-
 	// returns len_ value
 	size_t len()
 	{
@@ -42,17 +38,12 @@ public:
 	}
 
 	// prints particular element at given index
-	void print_index(size_t index)
+	virtual void print_index(size_t index)
 	{
 	}
 
 	// prints entire array
-	void print()
-	{
-	}
-
-	// append given object to the array if there is space
-	void append(*void to_add)
+	virtual void print()
 	{
 	}
 };
