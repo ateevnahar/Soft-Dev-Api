@@ -6,9 +6,6 @@
 class Array : public Object
 {
 public:
-	size_t hash_;
-	size_t len_;
-	Object *arr_;
 
 	// constructor
 	Array(size_t size)
@@ -31,7 +28,7 @@ public:
 	}
 
 	// inserts given object at given index
-	void insert(Object to_add, size_t index)
+	void insert(* void to_add, size_t index)
 	{
 	}
 
@@ -41,7 +38,7 @@ public:
 	}
 
 	// returns pointer to object at given index
-	Object *get(size_t index)
+	*void *get(size_t index)
 	{
 	}
 
@@ -64,4 +61,5 @@ public:
 	void append(Object to_add)
 	{
 	}
+
 };
