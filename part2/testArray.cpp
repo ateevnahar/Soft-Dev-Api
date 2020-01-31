@@ -67,7 +67,11 @@ void test4()
   array2->append(q);
   array->insert(w,1);
   array2->insert(w,1);
-  t_true(test1->hash() == test2->hash());
+  for(int ew = 0; ew < array.length(); ew++){
+    if(array[ew] != array2[ew]){
+      FAIL();
+    }
+  }
   OK("4");
 }
 void test5()
