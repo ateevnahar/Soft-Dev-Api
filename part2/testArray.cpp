@@ -24,7 +24,7 @@ void test1()
   test->append(s);
   test->append(t);
   test->insert(t, 2);
-  t_true(test->get(0) == s);
+  t_true(test->get(0)->equals(s));
   t_true(test->len == 3);
       OK("1");
 }
@@ -37,7 +37,7 @@ void test2()
   test->append(t);
   test->insert(t, 2);
   test->remove(2);
-  t_true(test->get(2) == nullptr);
+  t_true(test->get(2)->equals(nullptr));
   OK("2");
 }
 void test3()
@@ -79,7 +79,7 @@ void test5()
   arraybool->append(p);
   arraybool->append(e);
   arraybool->append(r);
-  t_true(arraybool->get(2) == true);
+  t_true(arraybool->get(2)->equals(true));
   OK("5");
 }
 void test6()
