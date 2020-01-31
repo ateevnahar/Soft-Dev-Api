@@ -20,7 +20,7 @@ void test1()
 {
   String *s = new String("Hello");
   String *t = new String("World");
-  Array *test = new Array(3);
+  StringArray *test = new StringArray(3);
   test->append(s);
   test->append(t);
   test->insert(t, 2);
@@ -32,7 +32,7 @@ void test2()
 {
   String *s = new String("Hello");
   String *t = new String("World");
-  Array *test = new Array(3);
+  StringArray *test = new StringArray(3);
   test->append(s);
   test->append(t);
   test->insert(t, 2);
@@ -44,8 +44,8 @@ void test3()
 {
   String *s = new String("Hello");
   Object *t = new String("World");
-  Array *test1 = new Array(2);
-  Array *test2 = new Array(2);
+  StringArray *test1 = new StringArray(2);
+  StringArray *test2 = new StringArray(2);
   test1->append(s);
   test2->append(s);
   test1->insert(t, 1);
