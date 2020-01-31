@@ -37,7 +37,7 @@ void test2()
   test->append(t);
   test->insert(t, 2);
   test->remove(2);
-  t_true(test->get(2)->equals(nullptr));
+  t_true(test->get(2)==nullptr);
   OK("2");
 }
 void test3()
